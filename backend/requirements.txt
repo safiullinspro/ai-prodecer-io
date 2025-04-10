@@ -1,0 +1,62 @@
+# Web framework and server
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic<2.0.0,>=1.8.0
+# Flask (если используется)
+Flask==2.0.3
+Flask-Cors==3.0.10
+
+# Database
+sqlalchemy>=1.4.23
+alembic>=1.7.0  # Добавлено для миграций базы данных
+# Раскомментируйте нужный драйвер:
+# psycopg2-binary>=2.9.0  # для PostgreSQL
+# pymysql>=1.0.0  # для MySQL
+# sqlite3 уже встроен в Python
+
+# Authentication and security
+python-jose>=3.3.0
+passlib[bcrypt]>=1.7.4  # Добавлен bcrypt для более безопасного хеширования
+python-multipart>=0.0.5
+pyjwt>=2.0.0  # Добавлено для работы с JWT
+
+# HTTP requests
+requests>=2.26.0,<3.0.0
+
+# Google services
+google-generativeai>=0.3.0
+google-cloud-firestore>=2.11.0 # Добавляем Firestore! (Версия взята из старого requirements)
+google-cloud-recaptcha-enterprise>=1.12.0
+google-auth>=2.18.0
+google-api-python-client==2.30.0
+google-cloud-storage>=2.0.0  # Добавлено для работы с Google Cloud Storage
+google-auth-oauthlib==0.4.6
+google-auth-httplib2==0.1.0
+
+# Data processing
+pandas
+numpy
+
+# Testing
+pytest>=7.0.0  # Добавлено для тестирования
+pytest-cov>=4.0.0  # Добавлено для покрытия кода тестами
+
+# Development tools
+black>=23.0.0  # Добавлено для форматирования кода
+isort>=5.0.0  # Добавлено для сортировки импортов
+flake8>=6.0.0  # Добавлено для проверки стиля кода
+
+# Firebase
+firebase-admin>=6.0.0
+
+# Дополнительные полезные пакеты
+python-dotenv # Зависимость уже была, но старая версия
+loguru>=0.7.0  # Улучшенное логирование
+tenacity>=8.2.0  # Для повторных попыток выполнения операций
+gspread==5.1.1
+oauth2client==4.1.3
+isodate>=0.6.0 # Добавлено для парсинга длительности видео YouTube
+pydantic[email]==1.10.21 # Добавляем опциональную зависимость явно
+
+# Парсинг HTML
+beautifulsoup4>=4.9.3
